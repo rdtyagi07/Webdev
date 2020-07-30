@@ -1,0 +1,7 @@
+/* This the place where we style the page and this exclusive one is called External css, there are inline and internal as well 
+*/
+/* So here we want to edit a specific element say h1 that says coffee junkie, But if we use h1 it will select all the h1s from the project 
+But to edit specific we can use classes and Id's */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

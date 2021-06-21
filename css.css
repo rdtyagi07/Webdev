@@ -1,0 +1,562 @@
+/* first */
+body {
+  font-family: segoe UI;
+  overflow-x: hidden;
+  height: 2500px;
+}
+#left {
+  font-family: Blaster;
+
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 32px;
+  float: left;
+}
+#right {
+  padding-bottom: 10px;
+  padding-top: 33px;
+  text-align: auto;
+  float: auto;
+  font-size: 17px;
+}
+#search {
+  float: right;
+}
+#globe {
+  float: right;
+}
+a {
+  color: #707070;
+}
+a:hover {
+  text-decoration: none;
+  color: green;
+}
+#com {
+  color: green;
+}
+#num {
+  font-weight: bold;
+  font-size: 40px;
+}
+.menu_icon {
+  display: none;
+}
+@media screen and (max-width: 1250px) {
+  ul li:nth-child(10) {
+    display: none;
+  }
+}
+@media screen and (max-width: 1150px) {
+  ul li:nth-child(9) {
+    display: none;
+  }
+}
+@media screen and (max-width: 1100px) {
+  ul li:nth-child(8) {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  #right-aside {
+    display: none;
+  }
+}
+@media screen and (max-width: 950px) {
+  .menu_icon {
+    display: inline-block;
+  }
+  ul li:nth-child(7) {
+    display: none;
+  }
+}
+@media screen and (max-width: 850px) {
+  ul li:nth-child(6) {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  ul li:nth-child(5) {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  #red {
+    display: none;
+  }
+  ul li:nth-child(4) {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  ul li:nth-child(3) {
+    display: none;
+  }
+}
+@media screen and (max-width: 650px) {
+  ul li:nth-child(14) {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  ul li:nth-child(15) {
+    display: none;
+  }
+}
+@media screen and (max-width: 760px) {
+  #x li {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #left {
+    text-align: center;
+  }
+  #right {
+    text-align: center;
+    padding-top: 0px;
+  }
+}
+/* second */
+nav ul {
+  z-index: 100000;
+  color: white;
+  background-color: #707070;
+  padding: 7px;
+  margin: 0px;
+  padding-top: 15px;
+  padding-left: 0px;
+  padding-right: 2px;
+  padding-bottom: 15px;
+}
+nav li {
+  cursor: pointer;
+  color: white;
+  font-size: 19px;
+  padding: 10px;
+  padding-top: 11px;
+  display: inline-block;
+}
+nav li:hover {
+  background-color: #180000;
+}
+.login_btn {
+  color: white;
+  float: right;
+  background-color: green;
+  border-radius: 55px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.login_btn:hover {
+  color: green;
+}
+.paidc {
+  color: white;
+  float: right;
+  margin-right: 10px;
+}
+.paidc:hover {
+  color: white;
+  background-color: green;
+  border-radius: 55px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.right {
+  float: auto;
+}
+.caret {
+  border-width: 7px;
+  color: white;
+  padding-bottom: 5px;
+}
+.white_c {
+  color: white;
+}
+
+.glyphicon {
+  padding-bottom: 16px;
+  padding-top: 12px;
+}
+
+#x {
+  position: absolute;
+  left: 0;
+  background-color: #707070;
+  width: 100%;
+}
+.more-menu {
+  background-color: #707070;
+}
+
+.reference-menu {
+  background-color: #707070;
+}
+.examples-menu {
+  background-color: #707070;
+}
+
+#x ul {
+  width: 100%;
+}
+
+#x:hover {
+  background-color: white;
+}
+
+.menu {
+  margin-bottom: 0px;
+  font-size: 30px;
+}
+.menu div:hover {
+  background-color: black;
+}
+
+.row {
+  font-size: 20px;
+}
+#head {
+  font-size: 35px;
+}
+#head:hover {
+  cursor: default;
+  background-color: #4e4e4e;
+}
+#deep {
+  padding-bottom: 0px;
+}
+.row {
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+body {
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+h1 {
+  font-size: 80px;
+  color: #555555;
+}
+
+h3 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #3a3a3a;
+
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-size: 36px;
+  margin: 0;
+}
+
+/* Fixes extra right margin on main element */
+main {
+  margin: 0 !important;
+  width: 100% !important;
+}
+/* .main1 {
+  background-color: grey;
+} */
+p {
+  font-size: 24px;
+  margin: 24px 0;
+  color: #3a3a3a;
+}
+
+footer {
+  background-color: #616161;
+  color: white;
+}
+
+footer a {
+  color: white;
+  letter-spacing: 4px;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #00b852;
+}
+
+footer p {
+  color: white;
+  font-size: 15px;
+}
+
+#intro {
+  margin-top: 10px;
+  padding: 16px 30px;
+}
+
+#menu-btn {
+  color: white;
+  padding: 16px;
+}
+
+#menu-btn:hover {
+  color: black;
+  background-color: white;
+}
+
+#slogan {
+  letter-spacing: 4px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+#sql {
+  background-color: rgb(153, 211, 96);
+}
+#php {
+  background-color: rgb(255, 0, 0);
+}
+#jquery {
+  background-color: skyblue;
+}
+#java1 {
+  background-color: peru;
+}
+#w3css {
+  background-color: plum;
+}
+#boot1 {
+  background-color: rgb(230, 230, 166);
+}
+#colorp1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* #color-picker {
+  width: 150px;
+  height: 128px;
+  margin: 20px 10px;
+} */
+.lynx {
+  text-align: center;
+}
+#web-temp-image {
+  margin: 30px 0;
+}
+#temp1 {
+  background-color: wheat;
+}
+.career {
+  background-color: tomato;
+  padding: 15px;
+  margin-left: inherit;
+}
+#course {
+  margin-left: 40px;
+}
+#kickstart {
+  margin-left: 40px;
+}
+#gs_btn {
+  background-color: teal;
+  font-size: 18px;
+  margin-left: 30px;
+  margin-top: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* To make overlay text over image, the entire containter must have a relative positioning 
+  Image element is to be left alone and the text should have positioning absolute that determines where they would be placed on top of the image */
+#web-cert {
+  position: relative;
+  padding: 0;
+  background-color: black;
+}
+
+#overlay-text {
+  padding: 25px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: white;
+  background-color: #00000080;
+}
+
+#get-cert-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#get-cert-btn:hover {
+  background-color: #f1f1f1;
+  box-shadow: none;
+}
+
+#get-cert-btn a:hover {
+  color: black;
+}
+
+#footer-info a {
+  text-decoration: underline;
+  letter-spacing: normal;
+}
+
+#thumbs-up {
+  font-size: 30px;
+}
+
+#thumbs-up:hover {
+  color: white;
+}
+
+#links {
+  padding: 15px;
+}
+
+.imp-btn {
+  padding: 12px 24px;
+  font-size: 18px;
+}
+
+.clear-pad {
+  padding: 0 !important;
+}
+
+.clear-marg {
+  margin: 0 !important;
+}
+
+.blue {
+  color: blue;
+}
+.red {
+  color: red;
+}
+.brown {
+  color: brown;
+}
+
+.grey-back {
+  background-color: #f1f1f1;
+}
+
+.code {
+  border-left: 4px solid #4caf50;
+  background-color: white;
+  font-family: Consolas, "courier new";
+  font-size: 16px;
+  margin: 20px 0px;
+  padding: 12px 16px;
+  word-wrap: normal;
+  line-height: 1.4;
+  text-align: left;
+}
+
+/* Only want a box shadow for code snippets when it is located in a row that has a grey background */
+.row .grey-back .code {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+}
+
+.box {
+  text-align: center !important;
+  padding: 3%;
+}
+
+.white-box {
+  background-color: white;
+  padding: 16px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+  height: 250px;
+}
+
+.grey-box {
+  background-color: #f1f1f1;
+  padding: 16px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+}
+
+.line {
+  margin-bottom: 10px;
+}
+
+.btn {
+  border-radius: 0px;
+  margin: 5px;
+  color: white;
+}
+
+.btn a {
+  color: white;
+}
+
+.btn a:hover {
+  text-decoration: none;
+}
+
+.grey-btn {
+  background-color: #616161;
+  border-radius: 25px;
+}
+
+.grey-btn:hover {
+  background-color: #ccc;
+}
+
+.grey-btn a:hover {
+  color: black;
+}
+
+.green-btn {
+  background-color: #00b852;
+}
+
+.green-btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.light-btn {
+  background-color: #f1f1f1;
+}
+
+.light-btn:hover {
+  background-color: #cccccc;
+}
+
+.light-btn a {
+  color: black;
+  letter-spacing: normal;
+}
+
+.light-btn a:hover {
+  color: black;
+}
+
+/* Use of not selector to add padding at bottom of every row except main element (for spacing purposes) 
+  This removes strange extra space at the bottom of the page */
+.row:not(main) {
+  padding-bottom: 30px;
+}
+
+.web-image {
+  width: 100% !important;
+  object-fit: scale-down !important;
+}

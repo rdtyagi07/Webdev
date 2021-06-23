@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <script src="/canmis.js"></script>
+    <title>Game</title>
+</head>
+<body>
+    <div class="home">
+        <div class="textArea">
+            <h1 id="title">Hi! Welcome to the Missionaries and Cannibals game</h1>
+            <h2>Problem</h2>
+            <p id="probStatement">Solve the famous problem of Cannibals and Missionaries Problem. There are three missionaries and three hungry Cannibals trying to cross a river on a boat. The boat can carry only 2 persons. At any point in time if at either side of the banks there are more Cannibals than Missionaries. Cannibals will eat the missionaries. Now, try and make them cross the river. </p>
+            <p id="instructions">You can move the person to the boat by clicking on it. And click the 'left' or 'right' buttons to move the boat.Reset to restart the game. <br>REMEMBER!! Once anyone get on the boat, it can't get off.</p>
+
+
+        </div>
+        <div class="gameArea">
+            <form action="canmis" name="theGame" method="POST">
+                <table border="0" bgcolor="antiquewhite" cellpadding = "0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td align="center">
+                                <img src="/missionary.png" id="mis1" name="leftmis1" style="height: 40px;" onclick='swapLeftMis(1)' alt="">
+                            </td>
+                            <td align="center">
+                                <img src="/missionary.png" id="mis2" name="leftmis2" style="height: 40px;" onclick='swapLeftMis(2)' alt="">
+                            </td>
+                            <td align="center">
+                                <img src="/missionary.png" id="mis3" name="leftmis3" style="height: 40px;" onclick='swapLeftMis(3)' alt="">
+                            </td>
+                                <td align="center">
+                                <img src="/Cannibal.png" id="demon1" name="leftcan1" style="height: 50px;" onclick='swapLeftCan(1)' alt="">
+                            </td>
+                            <td align="center">
+                                <img src="/Cannibal.png" id="demon2" name="leftcan2" style="height: 50px;" onclick='swapLeftCan(2)' alt="">
+                            </td>
+                            <td align="center">
+                                <img src="/Cannibal.png" id="demon3" name="leftcan3" style="height: 50px; width: 50px;" onclick='swapLeftCan(3)' alt="">
+                            </td>
+                    
+                            <td>
+                                <img src="/space.png" name="leftspace" width="10" alt="">
+                                <!-- <span></span> -->
+                            </td>
+
+                            <td>
+                                &nbsp; <br>
+                            <img src="/space.png" id="boat1" name ="boat1" style="height: 30px; width: 30px;" onclick='swapBoat(1)' alt="">
+                            </td>
+                            <td>
+                                &nbsp; <br>
+                            <img src="/space.png" id="boat2" name ="boat2" style="height: 30px; width: 30px;" allign='center' valign='MIDDLE'onclick='swapBoat(2)' alt="">
+                            </td>
+                            <td>
+                            <img src="/space.png" name="rightspace"width= "50"; alt="">
+                                <!-- <span></span> -->
+                            </td>
+                            <td>
+                                <img src="/space.png" id = "mis4" name="rightmis1" class="spaceimg" style="height: 50px; width: 50px;" onclick='swapRightMis(1)' alt="">
+                            </td>
+                            <td>
+                                <img src="/space.png" id = "mis5" name="rightmis2" class="spaceimg" style="height: 50px; width: 50px;" onclick='swapRightMis(2)' alt="">
+                            </td>
+                            <td>
+                                <img src="/space.png" id = "mis6" name="rightmis3" class="spaceimg" style="height: 50px; width: 50px;" onclick='swapRightMis(3)' alt="" >
+                            </td>
+                            <td>
+                                <img src="/space.png" id="demon4" name="rightcan1" class="spaceimg" style="height: 50px; width: 50px;" onclick='swapRightCan(1)' alt="">
+                            </td>
+                            <td>
+                                <img src="/space.png" id="demon5" name="rightcan2" class="spaceimg" style="height: 50px; width: 50px;" onclick='swapRightCan(2)' alt="">
+                            </td>
+                            <td>
+                                <img src="/space.png" id="demon6" name="rightcan3" class="spaceimg" style="height: 50px; width: 50px;" onclick='swapRightCan(3)' alt="">
+                            </td>
+                        </tr>
+                <TR>
+                <td COLSPAN="6" ALIGN='center'>
+                    <center>
+                        <font SIZE="-1">&nbsp;<BR>Left Bank</font>
+                    </center>
+                </td>
+                <td ALIGN='center'>&nbsp;&nbsp;</td>
+                <td COLSPAN="2" ALIGN='center'>
+                    <center>
+                        <font id = "boat"SIZE="-1">\------------------------/<BR>Boat</font>
+                    </center>
+                </TD>
+                <TD ALIGN='center'>&nbsp;&nbsp;
+                    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                    </TD>
+                                <TD COLSPAN="6" ALIGN='center'>
+                                    <center>
+                                        <font SIZE="-1">&nbsp;<BR>Right Bank</font>
+                                    </center>
+                                </TD>
+                                
+                            </TR>
+                                    
+                    </div>
+                    </div>
+                    <div class="controls">
+                    <input type="button" onclick='submitLeft();'name="left" value="Left">&nbsp;
+                            
+                    <input type="reset" name="Reset" value="Reset" onclick='startAgain();'>&nbsp;
+                    <input type="button" name="right" value="Right" onclick='submitRight();'>
+            </form>
+        </div>
+    
+</body>
+</html>

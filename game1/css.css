@@ -1,0 +1,27 @@
+body {
+  background-color: antiquewhite;
+}
+.home {
+  background-color: antiquewhite;
+  padding-bottom: 5rem;
+}
+#title {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#boat {
+  padding-left: 0px;
+  padding-top: 100px;
+}
+.spaceimg {
+  size: 10px;
+}
+.controls {
+  align-items: center;
+  align-content: center;
+  margin-bottom: 100px;
+}
+.gameArea {
+  width: 100%;
+  text-align: center;
+}

@@ -147,6 +147,7 @@ function swapBoat(n){
         if ( n == 1 && document.boat1.src.indexOf("missionary.png") >= 0 ) {
       if ( document.rightmis1.src.indexOf("space.png") >= 0 ) {
         document.rightmis1.src = "../missionary.png";
+        document.rightmis1.style.transitionDelay = "2s"
       } else if ( document.rightmis2.src.indexOf("space.png") >= 0 ) {
         document.rightmis2.src = "../missionary.png";
       } else if ( document.rightmis3.src.indexOf("space.png") >= 0 ) {
@@ -230,29 +231,30 @@ function swapBoat(n){
 } 
 
 function submitLeft(){
-    if(document.leftspace.width != 50){
+    if(document.leftspace.width != 250){
         return;
     }
     if(document.boat1.src.indexOf("space.png")>=0 && document.boat2.src.indexOf("space.png")>=0){
         alert("Boat is empty");
         return;
     }
+    document.rightspace.width = 250;
     document.leftspace.width = 10;
-    document.rightspace.width = 50;
     swapBoat(1);
     swapBoat(2);
     checkNumber();
     checkResult();
 }
-function submitRight(){
-if(document.rightspace.width != 50){
+function submitRight(){ 
+
+if(document.rightspace.width != 250){
         return;
     }
     if(document.boat1.src.indexOf("space.png")>=0 && document.boat2.src.indexOf("space.png")>=0){
         alert("Boat is empty");
         return;
     }
-    document.leftspace.width = 50;
+    document.leftspace.width = 250;
     document.rightspace.width = 10;
     swapBoat(1);
     swapBoat(2);
@@ -262,8 +264,8 @@ if(document.rightspace.width != 50){
 
 function startAgain(){
     document.leftspace.width = 10;
-    document.rightspace.width = 50;
-
+    document.rightspace.width = 250;
+    document.getElementById('title').innerHTML = "Hi! Welcome to the Missionaries and Cannibals game";
     document.leftmis1.src = "missionary.png";
     document.leftmis2.src = "missionary.png";
     document.leftmis3.src = "missionary.png";
@@ -355,7 +357,8 @@ function checkResult(){
     && document.rightcan1.src.indexOf("Cannibal.png")>=0
     && document.rightcan2.src.indexOf("Cannibal.png")>=0
     && document.rightcan3.src.indexOf("Cannibal.png")>=0
-){
+){  
+  document.getElementById('title').innerHTML = "Problem Solved!!";
     alert("Yay! Problem solved!!")
 }
 }

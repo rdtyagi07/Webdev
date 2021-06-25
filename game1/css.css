@@ -1,9 +1,22 @@
 body {
   background-color: antiquewhite;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* text-align: center; */
+}
+h1 {
+  font-family: "Courier New", Courier, monospace;
+}
+.controls {
+  background-color: rgb(230, 165, 80);
+  width: 100%;
+  border-radius: 5px;
+}
+form {
+  display: inline-block;
 }
 .home {
   background-color: antiquewhite;
-  padding-bottom: 5rem;
+  padding-bottom: 50px;
 }
 #title {
   text-align: center;
@@ -24,4 +37,157 @@ body {
 .gameArea {
   width: 100%;
   text-align: center;
+}
+
+#boatImg {
+  width: 120px;
+  margin-top: -20px;
+  margin-left: -11px;
+}
+
+#theGame {
+  padding-right: -300px;
+}
+
+#leftbank {
+  background-color: green;
+}
+
+#river {
+  background-color: blue;
+}
+#rightbank {
+  background-color: green;
+  margin-right: -100px;
+}
+#nbsp1 {
+  background-color: blue;
+}
+#nbsp2 {
+  background-color: blue;
+}
+#aftergame {
+  background-color: brown;
+  z-index: 2;
+}
+
+#leftspace {
+  transition: width 2s;
+}
+
+#righspace {
+  transition: width 2s;
+  position: absolute;
+  left: 0px;
+}
+
+.buttons {
+  background-color: #4caf50; /* Green */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#butt2 {
+  background-color: #f44336; /* Red */
+  font-size: 20px;
+}
+
+.buttons:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#mis1 {
+  transition: transform 0.2s;
+}
+
+#mis1:hover {
+  transform: scale(1.2);
+}
+#mis2 {
+  transition: transform 0.2s;
+}
+
+#mis2:hover {
+  transform: scale(1.2);
+}
+#mis3 {
+  transition: transform 0.2s;
+}
+
+#mis3:hover {
+  transform: scale(1.2);
+}
+#mis4 {
+  transition: transform 0.2s;
+}
+
+#mis4:hover {
+  transform: scale(1.2);
+}
+#mis5 {
+  transition: transform 0.2s;
+}
+
+#mis5:hover {
+  transform: scale(1.2);
+}
+#mis6 {
+  transition: transform 0.2s;
+}
+
+#mis6:hover {
+  transform: scale(1.2);
+}
+#demon1 {
+  transition: transform 0.2s;
+}
+
+#demon1:hover {
+  transform: scale(1.2);
+}
+#demon2 {
+  transition: transform 0.2s;
+}
+
+#demon2:hover {
+  transform: scale(1.2);
+}
+#demon3 {
+  transition: transform 0.2s;
+}
+
+#demon3:hover {
+  transform: scale(1.2);
+}
+#demon4 {
+  transition: transform 0.2s;
+}
+
+#demon4:hover {
+  transform: scale(1.2);
+}
+#demon5 {
+  transition: transform 0.2s;
+}
+
+#demon5:hover {
+  transform: scale(1.2);
+}
+#demon6 {
+  transition: transform 0.2s;
+}
+
+#demon6:hover {
+  transform: scale(1.2);
 }
